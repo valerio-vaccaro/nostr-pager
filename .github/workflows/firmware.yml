@@ -1,0 +1,29 @@
+name: Build firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PlatformIO
+        run: python -m pip install -r requirements.txt
+      - name: Compile firmware
+        run: pio run
+      - name: Export DIYFlasher files
+        run: python scripts/package_firmware.py
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: nostr-pager-firmware
+          path: dist/
+          if-no-files-found: error

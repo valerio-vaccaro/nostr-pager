@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "description": "Optional independent Nostr interoperability oracle",
+  "dependencies": {"@noble/curves": "1.9.7"}
+}

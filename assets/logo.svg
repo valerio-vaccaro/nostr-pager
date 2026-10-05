@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Nostr Pager logo</title>
+  <rect width="64" height="64" rx="18" fill="#19372f"/>
+  <rect x="12" y="15" width="40" height="35" rx="8" fill="#0d191a" stroke="#68e0c4" stroke-width="2"/>
+  <rect x="19" y="23" width="26" height="14" rx="3" fill="#68e0c4"/>
+  <path d="M24 28h15m-15 4h9" stroke="#19372f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M19 43h9m6 0h9" stroke="#68e0c4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M43 9h8l5 5" fill="none" stroke="#b7a1ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
